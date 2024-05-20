@@ -2,7 +2,11 @@
 const RANDOM_QUOUTE_API_URL = 'http://api.quotable.io/random';
 const quoteDIsplayElement = document.getElementById('typing');
 const quoteInputElement = document.GetElementById('typing-input');
-/**The code from below is from the guide */
+
+quoteInputElement.addEventListener('input', () => {
+    const arrayQuote = quoteDisplayElement.querySelectorAll('span');
+    const arrayValue = quoteInputElement.value.split('');
+})
 
 /**Fetch a random quote from the url */
 function getRandomQuote(){
@@ -43,5 +47,6 @@ document.addEventListener ('DOMContentLoaded', (event) =>{
     const countDownElement = document.getElementById('timer');
     const countDownDuration = 6000;
     startTimer(countDownDuration, countDownElement);
+    renderNewQuote();
 
 });

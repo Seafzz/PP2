@@ -1,0 +1,34 @@
+/* universal applier*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Body*/
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #3d3d3d;
+}
+.gamearea{
+    background: linear-gradient(120deg, rgb(194, 99, 94), rgb(0,0,0));
+    color: #fff;
+    width:900px;
+    border-radius:20px;
+    padding:30px;
+    position: relative;
+    text-shadow: 0 0 2px rgba( 0,0,0,0.5);
+    box-shadow: 0 0 10px rgb(0,0,0, 1);
+
+}
+.gamearea .input-field{
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height:100%;
+    opacity:0;
+}

@@ -34,8 +34,19 @@ body{
     height:100%;
     opacity:0;
 }
-.gamewindow .typing p{
+/* Inner window for the gamearea*/
+.gamewindow .typing{
     max-height:300px;
     max-width:700px;
     overFlow-y:auto;
+}
+/* gamewindoes text*/
+.gamewindow .typing p{
+    text-align:justify;
+    font-size:25px;
+    letter-spacing: 1,5px;
+    word-break: break-all;
+}
+.counters{
+
 }

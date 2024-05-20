@@ -10,7 +10,7 @@ function getRandomQuote(){
 }
 
 
-/**Render a new quote and make every word into spans */
+/**Render a new quote and make every word into a span */
 function renderNewQuote() {
     getRandomQuote().then(quote => {
         quoteDisplayElement.innerHTMl ='';
@@ -23,3 +23,15 @@ function renderNewQuote() {
         quoteInputElement.focus();
     })
 }
+const countDownDuration = 6000;
+const endTime = Date.now() + countDownDuration;
+const countDonwElement = document.getElementById('timer');
+const interval = setInterval(function(){
+    const remaining = endTime - Date.now();
+    const secondsLeft = Math.round(remaining/1000);
+    countDownELement.textContent = secondsLeft + 'seconds remaining';
+    if (remaining <= 0){
+        clearInterval(interval);
+        countDownELement.textContent = 'Time is up!';
+    }
+}, 1000);

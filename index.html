@@ -6,7 +6,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
+    <div class ="gamearea">
+        <input type ="text" id="typing-input" class="input-field">
+        <div class="gamewindow">
+            <div id="typing"></div>
+            <div class="content">
+               <ul class="result"> 
+                    <li class ="time">
+                     <p>Time</p>
+                     <span id="timer">60</span>
+                     <li class="errors"><p>Errors</p><span>0</span></li>
+                     <li class="cpm"><p>CPM</p><span>0</span></li>
+                     <li class="wpm"><p>WPM</p><span>0</span></li>
+                    </li>
+               </ul>
+            </div>
+        </div>
+        <button>Go Again</button>
+    </div>
  <script src="assets/js/script.js"></script>   
 </body>
 </html>

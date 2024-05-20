@@ -76,3 +76,15 @@ body{
 .gamearea .scores li:last-child{
     border-bottom:none;
 }
+.gamearea button{
+    background: linear-gradient(100deg, rgb(194, 99, 94), rgb(0,0,0));
+    width:45%;
+    height:20%;
+    background-color: #000;
+    color: #fff;
+    font-size:20px;
+    border:none;
+    border-radius:12px;
+    position:absolute;
+    cursor:pointer;   
+}

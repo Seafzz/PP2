@@ -50,15 +50,24 @@ document.addEventListener ('DOMContentLoaded', (event) =>{
     
 
 });
-/** The functions checking for correct spelling and counting accordingly */
+/** The functions checking for correct spelling */
 
 function checks(){
-    const characters = typing_text.querySelectorAll('span');
-    let typedCharacters = inputField.value.split('')[characterIndex];
-    if(characters[characterIndex].innerText === typedCharacters)
-        console.log('correct');
-} else if{
-    (characters[characterIndex].innerText != typedCharacters)
-    console.log('incorrect');
-    
+    const characters = quoteDisplayElement.querySelectorAll('span');
+    let typedCharacters = quoteInputElement.value.split('');
+    let correct = true;
+    characters.forEach((charSpan, index ) => {
+    const character = typedCharacters[index];
+    if (character == null){
+        charspan.classList.remove('correct', 'incorrect');
+        correct = false;
+    } else if (character === charSpan.innerText){
+        charSpan.classList.add('correct');
+        charSpan.classList.remove('incorrect');
+    }else{
+        charSpan.classList.add('incorrect');
+        charSpan.classList.remove('correct');
+        correct = false;
+    }
+});
 }

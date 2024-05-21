@@ -12,7 +12,7 @@ quoteInputElement.addEventListener('input', () => {
 function getRandomQuote(){
     return fetch(RANDOM_QUOUTE_API_URL)
     .then (response = response.json())
-    .then (repsone => data.content);
+    .then (data => data.content);
 }
 
 /**Render a new quote and make every word into a span */
@@ -57,6 +57,8 @@ function checks(){
     let typedCharacters = inputField.value.split('')[characterIndex];
     if(characters[characterIndex].innerText === typedCharacters)
         console.log('correct');
-}else{
+} else if{
+    (characters[characterIndex].innerText != typedCharacters)
     console.log('incorrect');
+    
 }

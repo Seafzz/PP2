@@ -59,7 +59,7 @@ body{
     flex-direction:column;
     width:20%;
     text-align:center;
-    line-height:32px;
+    line-height:35px;
 }
 /* list items*/
 .gamearea .scores{
@@ -87,4 +87,18 @@ body{
     border-radius:12px;
     position:absolute;
     cursor:pointer;   
+}
+/* List items text*/
+.scores li.time p,
+.scores li.errors p,
+.scores li.wpm p,
+.scores li.cpm p{
+    font-weight:600;
+}
+/* List items fontsize*/
+.scores li.time,
+.scores li.errors,
+.scores li.wpm,
+.scores li.cpm{
+    font-size:20px;
 }

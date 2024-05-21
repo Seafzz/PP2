@@ -36,7 +36,7 @@ function startTimer(){
     const interval = setInterval(function(){
         const remaining = endTime - Date.now();
         const secondsLeft = Math.round(remaining / 1000);
-        countDownElement.textContent = secondsLeft + 'seconds remaining';
+        countDownElement.textContent = secondsLeft;
         if (remaining <= 0) {
          clearInterval(interval);
           countDownElement.textContent = 'Time is up!';
@@ -47,6 +47,6 @@ document.addEventListener ('DOMContentLoaded', (event) =>{
     const countDownElement = document.getElementById('timer');
     const countDownDuration = 6000;
     startTimer(countDownDuration, countDownElement);
-    renderNewQuote();
+    
 
 });

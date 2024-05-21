@@ -50,3 +50,13 @@ document.addEventListener ('DOMContentLoaded', (event) =>{
     
 
 });
+/** The functions checking for correct spelling and counting accordingly */
+
+function checks(){
+    const characters = typing_text.querySelectorAll('span');
+    let typedCharacters = inputField.value.split('')[characterIndex];
+    if(characters[characterIndex].innerText === typedCharacters)
+        console.log('correct');
+}else{
+    console.log('incorrect');
+}

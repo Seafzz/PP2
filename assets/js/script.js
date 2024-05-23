@@ -42,7 +42,7 @@ function startTimer(){
          clearInterval(interval);
           countDownElement.textContent = 'Time is up!';
           gameRunning = false;
-          calculateResults();
+          Results();
         }
     }, 1000);
 }
@@ -100,4 +100,10 @@ function update(){
     document.querySelector('.wpm span').textContent = wpm;
     document.querySelector('.cpm span').textContent = cpm;
     
+}
+function results(){
+    const currentTime = new Date();
+    const timeElapsed = (currentTime- startTime)/ 1000 / 60;
+    const wpm = Math.round((typedCharactersCount/5)/ TimeElapsed);
+    const cpm = Math.round(typedCharactersCount/timeElapsed);
 }

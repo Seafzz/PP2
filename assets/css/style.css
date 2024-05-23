@@ -108,4 +108,20 @@ body{
 .incorrect{
     color:red;
 }
+.typing span.active {
+    color: #979494;
+}
+.typing span.active::before{
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:5px;
+    width:100%;
+    background:#9af902;
+    animation: blink 0.5s ease-in-out infinite;
+    opacity: 0;
+}
+.typing span{
+    position:relative;
+}
 

@@ -101,9 +101,12 @@ function update(){
     document.querySelector('.cpm span').textContent = cpm;
     
 }
+/** Calculate the final results */
 function results(){
     const currentTime = new Date();
     const timeElapsed = (currentTime- startTime)/ 1000 / 60;
     const wpm = Math.round((typedCharactersCount/5)/ TimeElapsed);
     const cpm = Math.round(typedCharactersCount/timeElapsed);
+
+    alert('Time is up! your results: \nWPM: ${wpm}nCPM: ${cpm}\nErrors: ${errorCount}');
 }

@@ -43,7 +43,7 @@ function startTimer(){
         }
     }, 1000);
 }
-document.addEventListener ('DOMContentLoaded', (event) =>{
+document.addEventListener ('DOMContentLoaded', (event) => {
     startTimer();
     renderNewQuote();
     

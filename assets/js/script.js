@@ -14,6 +14,7 @@ function getRandomQuote(){
 
 /**Render a new quote and make every word into a span */
 function renderNewQuote() {
+    if (!gameRunning) return;
     getRandomQuote().then(quote => {
         quoteDisplayElement.innerHTML ='';
         quote.split('').forEach(character =>{
@@ -30,19 +31,23 @@ function startTimer(){
     const countDownDuration = 60000;
     const endTime = Date.now() + countDownDuration;
     const countDownElement = document.getElementById('timer');
-    const interval = setInterval(function(){
+    const interval = setInterval(function() {
         const remaining = endTime - Date.now();
         const secondsLeft = Math.round(remaining / 1000);
         countDownElement.textContent = secondsLeft;
         if (remaining <= 0) {
          clearInterval(interval);
           countDownElement.textContent = 'Time is up!';
+          gameRunning = false;
+          calculateResults();
         }
     }, 1000);
 }
 document.addEventListener ('DOMContentLoaded', (event) => {
     startTimer();
     renderNewQuote();
+    
+    )
     
 
 });

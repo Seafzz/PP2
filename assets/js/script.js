@@ -2,6 +2,7 @@
 const RANDOM_QUOTE_API_URL = 'https://api.quotable.io/random';
 const quoteDisplayElement = document.getElementById('typing')
 const quoteInputElement = document.getElementById('typing-input')
+let gameRunning = true;
 
 quoteInputElement.addEventListener('input',checks);
 
@@ -47,10 +48,15 @@ document.addEventListener ('DOMContentLoaded', (event) => {
     startTimer();
     renderNewQuote();
     
-    )
-    
-
+    quoteInputElement.addEventListener ('input', () => {
+        const correctCharacters = quoteDisplayElement.querrySelectorAll('span.correct').length;
+        const totalCharacters = quoteDisplayElement.querrySelectorAll('span').length;
+        if (correctCharacters === totalCharacters){
+            renderNewQuote();
+        }
+    })
 });
+
 /** The functions checking for correct spelling */
 
 function checks(){

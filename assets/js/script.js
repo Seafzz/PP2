@@ -64,8 +64,9 @@ document.addEventListener ('DOMContentLoaded', (event) => {
 
 function checks(){
     const characters = quoteDisplayElement.querySelectorAll('span');
-    let typedCharacters = quoteInputElement.value.split('');
-    let correct = true;
+    const typedCharacters = quoteInputElement.value.split('');
+    typedCharactersCount = typedCharacters.length;
+    errorCount = 0;
     characters.forEach((charSpan, index ) => {
     const character = typedCharacters[index];
     if (character == null){
@@ -81,7 +82,7 @@ function checks(){
     }
 });
 }
-/**resets the counters */
+/** resets the counters */
 function reset(){
     typedCharacters = 0;
     errorCount = 0;
@@ -89,6 +90,7 @@ function reset(){
     document.querySelector('.cpm span').textContent = 0;
     document.querySelector('.wpm span').textContent = 0;
 }
+/** Update the wpm/cpm and calculate the time lapsed to give an accurate reading of the wpm/cpm */
 function update(){
     const timeElapsed = (currentTime - startTime) / 1000 / 60;
     const currentTime = new Date ();

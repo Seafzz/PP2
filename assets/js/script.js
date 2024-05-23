@@ -1,5 +1,5 @@
 /**Followed a guide and using their code for the Api fetch and quote generator */
-const RANDOM_QUOUTE_API_URL = 'https://api.quotable.io/random';
+const RANDOM_QUOTE_API_URL = 'https://api.quotable.io/random';
 const quoteDIsplayElement = document.getElementById('typing')
 const quoteInputElement = document.getElementById('typing-input')
 
@@ -11,14 +11,14 @@ quoteInputElement.addEventListener('input', () => {
 /**Fetch a random quote from the url */
 function getRandomQuote(){
     return fetch(RANDOM_QUOUTE_API_URL)
-    .then (response = response.json())
+    .then (response => response.json())
     .then (data => data.content);
 }
 
 /**Render a new quote and make every word into a span */
 function renderNewQuote() {
     getRandomQuote().then(quote => {
-        quoteDisplayElement.innerHTMl ='';
+        quoteDisplayElement.innerHTML ='';
         quote.split('').forEach(character =>{
             const characterSpan = document.createElement('span');
             characterSpan.innerText = character;
@@ -46,7 +46,8 @@ function startTimer(){
 document.addEventListener ('DOMContentLoaded', (event) =>{
     const countDownElement = document.getElementById('timer');
     const countDownDuration = 6000;
-    startTimer(countDownDuration, countDownElement);
+    startTimer();
+    renderNewQuote();
     
 
 });
@@ -59,7 +60,7 @@ function checks(){
     characters.forEach((charSpan, index ) => {
     const character = typedCharacters[index];
     if (character == null){
-        charspan.classList.remove('correct', 'incorrect');
+        charSpan.classList.remove('correct', 'incorrect');
         correct = false;
     } else if (character === charSpan.innerText){
         charSpan.classList.add('correct');

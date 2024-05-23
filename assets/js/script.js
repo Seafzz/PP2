@@ -1,6 +1,6 @@
 /**Followed a guide and using their code for the Api fetch and quote generator */
 const RANDOM_QUOTE_API_URL = 'https://api.quotable.io/random';
-const quoteDIsplayElement = document.getElementById('typing')
+const quoteDisplayElement = document.getElementById('typing')
 const quoteInputElement = document.getElementById('typing-input')
 
 quoteInputElement.addEventListener('input',checks);

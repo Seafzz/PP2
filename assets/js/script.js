@@ -52,8 +52,8 @@ document.addEventListener ('DOMContentLoaded', (event) => {
     renderNewQuote();
     /**calls a new quote when all chars are typed correctly */
     quoteInputElement.addEventListener ('input', () => {
-        const correctCharacters = quoteDisplayElement.querrySelectorAll('span.correct').length;
-        const totalCharacters = quoteDisplayElement.querrySelectorAll('span').length;
+        const correctCharacters = quoteDisplayElement.querySelectorAll('span.correct').length;
+        const totalCharacters = quoteDisplayElement.querySelectorAll('span').length;
         if (correctCharacters === totalCharacters){
             renderNewQuote();
         }
@@ -96,8 +96,8 @@ function update(){
     const currentTime = new Date ();
     const wpm = Math.round((typedCharactersCount/5)/ TimeElapsed);
     const cpm = Math.round(typedCharactersCount/timeElapsed);
-    document.querrySelector('.errors span').textContent = errorsCount;
-    document.querrySelector('.wpm span').textContent = wpm;
-    document.querrySelector('.cpm span').textContent = cpm;
+    document.querySelector('.errors span').textContent = errorsCount;
+    document.querySelector('.wpm span').textContent = wpm;
+    document.querySelector('.cpm span').textContent = cpm;
     
 }

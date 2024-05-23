@@ -67,3 +67,12 @@ function checks(){
     }
 });
 }
+/**resets the counters */
+function reset(){
+    typedCharacters = 0;
+    errorCount = 0;
+    document.querySelector('.erros span').textContent = 0;
+    document.querySelector('.cpm span').textContent = 0;
+    document.querySelector('.wpm span').textContent = 0;
+    
+}

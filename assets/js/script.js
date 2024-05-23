@@ -89,3 +89,13 @@ function reset(){
     document.querySelector('.cpm span').textContent = 0;
     document.querySelector('.wpm span').textContent = 0;
 }
+function update(){
+    const timeElapsed = (currentTime - startTime) / 1000 / 60;
+    const currentTime = new Date ();
+    const wpm = Math.round((typedCharactersCount/5)/ TimeElapsed);
+    const cpm = Math.round(typedCharactersCount/timeElapsed);
+    document.querrySelector('.errors span').textContent = errorsCount;
+    document.querrySelector('.wpm span').textContent = wpm;
+    document.querrySelector('.cpm span').textContent = cpm;
+    
+}

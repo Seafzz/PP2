@@ -3,6 +3,8 @@ const RANDOM_QUOTE_API_URL = 'https://api.quotable.io/random';
 const quoteDisplayElement = document.getElementById('typing')
 const quoteInputElement = document.getElementById('typing-input')
 let gameRunning = true;
+let errorCount = 0;
+let typedCharactersCount = 0;
 
 quoteInputElement.addEventListener('input',checks);
 
@@ -44,10 +46,11 @@ function startTimer(){
         }
     }, 1000);
 }
+/** Start the game and timer when the site is loaded */
 document.addEventListener ('DOMContentLoaded', (event) => {
     startTimer();
     renderNewQuote();
-    
+    /**calls a new quote when all chars are typed correctly */
     quoteInputElement.addEventListener ('input', () => {
         const correctCharacters = quoteDisplayElement.querrySelectorAll('span.correct').length;
         const totalCharacters = quoteDisplayElement.querrySelectorAll('span').length;
@@ -74,7 +77,7 @@ function checks(){
     }else{
         charSpan.classList.add('incorrect');
         charSpan.classList.remove('correct');
-        correct = false;
+        errorCount++;
     }
 });
 }
@@ -85,5 +88,4 @@ function reset(){
     document.querySelector('.erros span').textContent = 0;
     document.querySelector('.cpm span').textContent = 0;
     document.querySelector('.wpm span').textContent = 0;
-    
 }

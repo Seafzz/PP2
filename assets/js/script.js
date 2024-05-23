@@ -3,10 +3,7 @@ const RANDOM_QUOTE_API_URL = 'https://api.quotable.io/random';
 const quoteDIsplayElement = document.getElementById('typing')
 const quoteInputElement = document.getElementById('typing-input')
 
-quoteInputElement.addEventListener('input', () => {
-    const arrayQuote = quoteDisplayElement.querySelectorAll('span');
-    const arrayValue = quoteInputElement.value.split('');
-})
+quoteInputElement.addEventListener('input',checks);
 
 /**Fetch a random quote from the url */
 function getRandomQuote(){

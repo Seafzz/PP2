@@ -10,9 +10,9 @@ quoteInputElement.addEventListener('input', () => {
 
 /**Fetch a random quote from the url */
 function getRandomQuote(){
-    return fetch(RANDOM_QUOUTE_API_URL)
-    .then (response => response.json())
-    .then (data => data.content);
+    return fetch(RANDOM_QUOTE_API_URL)
+    .then(response => response.json())
+    .then(data => data.content);
 }
 
 /**Render a new quote and make every word into a span */

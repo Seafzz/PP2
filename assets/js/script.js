@@ -44,8 +44,6 @@ function startTimer(){
     }, 1000);
 }
 document.addEventListener ('DOMContentLoaded', (event) =>{
-    const countDownElement = document.getElementById('timer');
-    const countDownDuration = 6000;
     startTimer();
     renderNewQuote();
     

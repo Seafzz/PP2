@@ -90,11 +90,11 @@ function checks(){
 }
 /** resets the counters */
 function reset(){
-    typedCharacters = 0;
+    typedCharactersCount = 0;
     errorCount = 0;
-    document.querySelector('.erros span').textContent = 0;
-    document.querySelector('.cpm span').textContent = 0;
-    document.querySelector('.wpm span').textContent =0;
+    errorsElement.textContent = 0;
+    wpmElement.textContent = 0;
+    cpmElement.textcontent = 0;
 }
 /** Update the wpm/cpm and calculate the time lapsed to give an accurate reading of the wpm/cpm */
 function update(){

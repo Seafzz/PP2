@@ -109,5 +109,8 @@ function results(){
     alert('Time is up! your results: \nWPM: ${wpm}nCPM: ${cpm}\nErrors: ${errorCount}');
 }
 function startplaying();{
-    
+    gameRunning=true;
+    resetCounters();
+    startTimer();
+    renderNewQuote();
 }

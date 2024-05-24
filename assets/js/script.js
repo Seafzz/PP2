@@ -55,7 +55,8 @@ function startTimer(){
 }
 /** Start the game and timer when the site is loaded */
 document.addEventListener ('DOMContentLoaded', (event) => {
-    startplaying();
+    renderNewQuote();
+    startTimer();
 });
 
 /** The functions checking for correct spelling */
@@ -107,10 +108,4 @@ function results(){
     const cpm = Math.round(typedCharactersCount/timeElapsed);
 
     
-}
-function startplaying(){
-    gameRunning=true;
-    reset();
-    startTimer();
-    renderNewQuote();
 }

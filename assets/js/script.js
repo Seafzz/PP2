@@ -2,14 +2,18 @@
 const RANDOM_QUOTE_API_URL = 'https://api.quotable.io/random';
 const quoteDisplayElement = document.getElementById('typing')
 const quoteInputElement = document.getElementById('typing-input')
-const errorsElement = document.getElementById('errors span'),
+const errorsElement = document.getElementById('errors span');
 const wpmElement = document.getElementById('.cpm span');
 const cpmElement = document.getElementById('.wpm span');
 let gameRunning = true;
 let errorCount = 0;
 let typedCharactersCount = 0;
+let startTime= null;
 
 quoteInputElement.addEventListener('input', () => {
+    if(!startTime){
+        startTime = new Date();
+    }
     checks();
     update();
     const correctCharacters = quoteDisplayElement.querySelectorAll('span.correct').length;

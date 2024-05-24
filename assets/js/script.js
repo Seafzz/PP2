@@ -45,20 +45,22 @@ function renderNewQuote() {
     })
 }
 /** Timer function */
-function startTimer(){
+function startTimer() {
     const countDownDuration = 60000;
-    const endTime = Date.now() + countDownDuration;
     const countDownElement = document.getElementById('timer');
-    countDownElement.textContent = '60';
+    countDownElement.textContent = '60'; 
+
     clearInterval(timerInterval);
-    const interval = setInterval(function() {
+
+    const endTime = Date.now() + countDownDuration;
+    timerInterval = setInterval(function() {
         const remaining = endTime - Date.now();
         const secondsLeft = Math.round(remaining / 1000);
         countDownElement.textContent = secondsLeft;
         if (remaining <= 0) {
-         clearInterval(interval);
-          countDownElement.textContent = 'Time is up!';
-          gameRunning = false;
+            clearInterval(timerInterval); 
+            countDownElement.textContent = 'Time is up!';
+            gameRunning = false;
         }
     }, 1000);
 }

@@ -98,8 +98,8 @@ function reset(){
 }
 /** Update the wpm/cpm and calculate the time lapsed to give an accurate reading of the wpm/cpm */
 function update(){
-    const TimeElapsed = (currentTime - startTime) / 1000 / 60;
     const currentTime = new Date ();
+    const TimeElapsed = (currentTime - startTime) / 1000 / 60;
     const wpm = Math.round((typedCharactersCount/5)/ TimeElapsed);
     const cpm = Math.round(typedCharactersCount/TimeElapsed);
     errorsElement.textContent = errorCount;

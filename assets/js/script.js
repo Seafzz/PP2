@@ -9,6 +9,7 @@ let gameRunning = true;
 let errorCount = 0;
 let typedCharactersCount = 0;
 let startTime= null;
+let timerInterval;
 
 quoteInputElement.addEventListener('input', () => {
     if(!startTime){

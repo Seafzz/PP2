@@ -11,6 +11,7 @@ let typedCharactersCount = 0;
 
 quoteInputElement.addEventListener('input', () => {
     checks();
+    update();
     const correctCharacters = quoteDisplayElement.querySelectorAll('span.correct').length;
     const totalCharacters = quoteDisplayElement.querySelectorAll('span').length;
     if (correctCharacters === totalCharacters) {

@@ -49,6 +49,7 @@ function startTimer(){
     const countDownDuration = 60000;
     const endTime = Date.now() + countDownDuration;
     const countDownElement = document.getElementById('timer');
+    countDownElement.textContent = '60';
     const interval = setInterval(function() {
         const remaining = endTime - Date.now();
         const secondsLeft = Math.round(remaining / 1000);

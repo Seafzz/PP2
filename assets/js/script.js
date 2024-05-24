@@ -100,14 +100,14 @@ function reset(){
 function update(){
     const currentTime = new Date ();
     const TimeElapsed = (currentTime - startTime) / 1000 / 60;
-    const wpm = Math.round((typedCharactersCount / 5) / TimeElapsed);
-    const cpm = Math.round(typedCharactersCount / TimeElapsed);
+    const wpm = Math.round(typedCharactersCount / 5 / TimeElapsed); // Calculate WPM
+    const cpm = Math.round(typedCharactersCount / TimeElapsed); // Calculate CPM
     errorsElement.textContent = errorCount;
     wpmElement.textContent = wpm;
     cpmElement.textContent = cpm;
+}
 
     
-}
 /** Calculate the final results */
 function results(){
     const currentTime = new Date();

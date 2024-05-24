@@ -109,9 +109,15 @@ function update(){
 }
 /** restart the game */
 function restart(){
+    reset();
     gameRunning = true;
     startTime = null;
-    reset();
     startTimer();
     renderNewQuote();
 }
+document.addEventListener('DOMContentLoaded', (event)=>{
+    renderNewQuote();
+    startTimer();
+});
+const restartButton = document.querySelector('button');
+restartButton.addEventListener('click', restart);

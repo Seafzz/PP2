@@ -2,6 +2,9 @@
 const RANDOM_QUOTE_API_URL = 'https://api.quotable.io/random';
 const quoteDisplayElement = document.getElementById('typing')
 const quoteInputElement = document.getElementById('typing-input')
+const errorsElement = document.getElementById('errors span'),
+const wpmElement = document.getElementById('.cpm span');
+const cpmElement = document.getElementById('.wpm span');
 let gameRunning = true;
 let errorCount = 0;
 let typedCharactersCount = 0;
@@ -94,9 +97,10 @@ function update(){
     const currentTime = new Date ();
     const wpm = Math.round((typedCharactersCount/5)/ TimeElapsed);
     const cpm = Math.round(typedCharactersCount/timeElapsed);
-    document.querySelector('.errors span').textContent = errorsCount;
-    document.querySelector('.wpm span').textContent = wpm;
-    document.querySelector('.cpm span').textContent = cpm;
+    errorsElement.textContent = errorCount;
+    wpmElement.textContent = wpm;
+    cpmElement.textContent = cpm;
+
     
 }
 /** Calculate the final results */

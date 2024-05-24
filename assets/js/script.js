@@ -94,14 +94,14 @@ function reset(){
     errorCount = 0;
     errorsElement.textContent = 0;
     wpmElement.textContent = 0;
-    cpmElement.textcontent = 0;
+    cpmElement.textContent = 0;
 }
 /** Update the wpm/cpm and calculate the time lapsed to give an accurate reading of the wpm/cpm */
 function update(){
     const currentTime = new Date ();
     const TimeElapsed = (currentTime - startTime) / 1000 / 60;
-    const wpm = Math.round((typedCharactersCount/5)/ TimeElapsed);
-    const cpm = Math.round(typedCharactersCount/TimeElapsed);
+    const wpm = Math.round((typedCharactersCount / 5) / TimeElapsed);
+    const cpm = Math.round(typedCharactersCount / TimeElapsed);
     errorsElement.textContent = errorCount;
     wpmElement.textContent = wpm;
     cpmElement.textContent = cpm;
@@ -112,6 +112,6 @@ function update(){
 function results(){
     const currentTime = new Date();
     const TimeElapsed = (currentTime- startTime)/ 1000 / 60;
-    const wpm = Math.round((typedCharactersCount/5)/ TimeElapsed);
-    const cpm = Math.round(typedCharactersCount/TimeElapsed);
+    const wpm = Math.round((typedCharactersCount / 5)/ TimeElapsed);
+    const cpm = Math.round(typedCharactersCount / TimeElapsed);
 }

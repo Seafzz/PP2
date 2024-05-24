@@ -86,7 +86,7 @@ function reset(){
     errorCount = 0;
     document.querySelector('.erros span').textContent = 0;
     document.querySelector('.cpm span').textContent = 0;
-    document.querySelector('.wpm span').textContent = 0;
+    document.querySelector('.wpm span').textContent =0;
 }
 /** Update the wpm/cpm and calculate the time lapsed to give an accurate reading of the wpm/cpm */
 function update(){
@@ -106,11 +106,11 @@ function results(){
     const wpm = Math.round((typedCharactersCount/5)/ TimeElapsed);
     const cpm = Math.round(typedCharactersCount/timeElapsed);
 
-    alert('Time is up! your results: \nWPM: ${wpm}nCPM: ${cpm}\nErrors: ${errorCount}');
+    
 }
-function startplaying();{
+function startplaying(){
     gameRunning=true;
-    resetCounters();
+    reset();
     startTimer();
     renderNewQuote();
 }

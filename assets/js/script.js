@@ -106,3 +106,11 @@ function update(){
     wpmElement.textContent = wpm;
     cpmElement.textContent = cpm;
 }
+/** restart the game */
+function restart(){
+    gameRunning = true;
+    startTime = null;
+    reset();
+    startTimer();
+    renderNewQuote();
+}

@@ -49,7 +49,6 @@ function startTimer(){
          clearInterval(interval);
           countDownElement.textContent = 'Time is up!';
           gameRunning = false;
-          Results();
         }
     }, 1000);
 }
@@ -106,6 +105,4 @@ function results(){
     const timeElapsed = (currentTime- startTime)/ 1000 / 60;
     const wpm = Math.round((typedCharactersCount/5)/ TimeElapsed);
     const cpm = Math.round(typedCharactersCount/timeElapsed);
-
-    
 }

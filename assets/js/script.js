@@ -50,6 +50,7 @@ function startTimer(){
     const endTime = Date.now() + countDownDuration;
     const countDownElement = document.getElementById('timer');
     countDownElement.textContent = '60';
+    clearInterval(timerInterval);
     const interval = setInterval(function() {
         const remaining = endTime - Date.now();
         const secondsLeft = Math.round(remaining / 1000);
@@ -110,14 +111,5 @@ function update(){
 /** restart the game */
 function restart(){
     reset();
-    gameRunning = true;
-    startTime = null;
     startTimer();
-    renderNewQuote();
-}
-document.addEventListener('DOMContentLoaded', (event)=>{
-    renderNewQuote();
-    startTimer();
-});
-const restartButton = document.querySelector('button');
-restartButton.addEventListener('click', restart);
+  }

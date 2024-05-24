@@ -6,7 +6,14 @@ let gameRunning = true;
 let errorCount = 0;
 let typedCharactersCount = 0;
 
-quoteInputElement.addEventListener('input',checks);
+quoteInputElement.addEventListener('input', () => {
+    checks();
+    const correctCharacters = quoteDisplayElement.querySelectorAll('span.correct').length;
+    const totalCharacters = quoteDisplayElement.querySelectorAll('span').length;
+    if (correctCharacters === totalCharacters) {
+        renderNewQuote();
+    }
+});
 
 /**Fetch a random quote from the url */
 function getRandomQuote(){
@@ -48,16 +55,7 @@ function startTimer(){
 }
 /** Start the game and timer when the site is loaded */
 document.addEventListener ('DOMContentLoaded', (event) => {
-    startTimer();
-    renderNewQuote();
-    /**calls a new quote when all chars are typed correctly */
-    quoteInputElement.addEventListener ('input', () => {
-        const correctCharacters = quoteDisplayElement.querySelectorAll('span.correct').length;
-        const totalCharacters = quoteDisplayElement.querySelectorAll('span').length;
-        if (correctCharacters === totalCharacters){
-            renderNewQuote();
-        }
-    })
+    startplaying();
 });
 
 /** The functions checking for correct spelling */
@@ -109,4 +107,7 @@ function results(){
     const cpm = Math.round(typedCharactersCount/timeElapsed);
 
     alert('Time is up! your results: \nWPM: ${wpm}nCPM: ${cpm}\nErrors: ${errorCount}');
+}
+function startplaying();{
+    
 }

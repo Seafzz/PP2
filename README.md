@@ -13,6 +13,9 @@ word per minute (WPM) and characthers per minute (CPM)
 - Timer that changes color based on the time remaining ( 60 seconds white, 30 seconds yellow, 15 seconds red)
 - Restart button to reset the Errors/Cpm/Wpm and Timer.
 
+## Feature to implement
+- Make a border that fills up during the 60 seconds the game is active.
+- implement different stages of the game, so the user can chose different times, 2,3 or 5 minutes. 
 ## Technologies Used
 - HTML 
 - CSS

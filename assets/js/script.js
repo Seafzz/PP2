@@ -1,4 +1,4 @@
-/**Followed a guide and using their code for the Api fetch and quote generator */
+/* WebDevSimplified  API quote and link */
 const RANDOM_QUOTE_API_URL = "https://api.quotable.io/random";
 const quoteDisplayElement = document.getElementById("typing");
 const quoteInputElement = document.getElementById("typing-input");
@@ -24,14 +24,14 @@ quoteInputElement.addEventListener("input", () => {
     }
 });
 
-/**Fetch a random quote from the url */
+/**Fetch a random quote from the url from WebDevSimplified */
 function getRandomQuote() {
     return fetch(RANDOM_QUOTE_API_URL)
         .then((response) => response.json())
         .then((data) => data.content);
 }
 
-/**Render a new quote and make every word into a span */
+/**Render a new quote and make every word into a span  from WebDevSimplified */
 function renderNewQuote() {
     if (!gameRunning) return;
     getRandomQuote().then((quote) => {

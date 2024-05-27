@@ -36,8 +36,8 @@ Counters are currently not counting as intended and shows wrong values to what i
 - Mozzila firefox no issues.
 
 ## Validating
-HTML validator: Passed without errors
-Css validator : Passed without errors
+- HTML validator: Passed without errors
+- Css validator : Passed without errors
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -54,7 +54,10 @@ Valid CSS!
         alt="Valid CSS!" />
     </a>
 </p>
-        
+    
+- Javascript validator
+- Passed through with one error: One unused variable (restart) called in the HTML for the button.
+
 
 
 

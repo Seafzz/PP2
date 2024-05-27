@@ -115,4 +115,5 @@ function update(){
 function restart(){
     reset();
     startTimer();
+    renderNewQuote();
   }

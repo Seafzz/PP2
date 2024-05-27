@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 /* Body*/
 body{
@@ -45,13 +45,13 @@ body{
 .gamewindow .typing p{
     text-align:justify;
     font-size:25px;
-    letter-spacing: 1,5px;
-    word-break: break-all;
+    letter-spacing: 1px;
+    word-break:break-all;
 }
 .gamewindow{
     display:flex;
     align-items:center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 /*Counters*/
 .Gamewindow .counters{

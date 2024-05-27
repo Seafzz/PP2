@@ -1,6 +1,6 @@
 #Typing Speed Test
 
-This project is a typing speed application that fetches a random quote from an API.
+This project is a typing speed game that fetches a random quote from an API.
 wich allows the user to type them as quickly and accurate as possible with a live feedback showing errors
 word per minute (WPM) and characthers per minute (CPM)
 
@@ -18,3 +18,21 @@ word per minute (WPM) and characthers per minute (CPM)
 - CSS
 - JavaScript
 - [Quotable API](https://api.quotable.io)
+
+## Setup and Usage
+1. Clone the repository:
+git clone https://github.com/Seafzz/PP2
+2. Start the index.html in with you webbrowser and to start the game.
+
+## Acknowledgments/Credits
+
+Sean, classmate for suggestions/brainstorming!
+WebDevSimplified (youtube guide linked below (API))
+CodingNepal (youtube guide linked below(Counters))
+WaisAyam (yotubeguide linked below (color/layout))
+
+
+- Guides 
+    https://www.youtube.com/watch?v=R-7eQIHRszQ&t=72 (API)
+    https://www.youtube.com/watch?v=Hg80AjDNnJk&t=1423s (counters)
+    https://www.youtube.com/watch?v=Y70pPpc1CUE (layout)

@@ -30,10 +30,32 @@ After the times run out and you press Go Again, it does not call for a new quote
 ## Known issues
 Counters are currently not counting as intended and shows wrong values to what is expected.
 
-## Manually testing
+## Manual testing
 - Google Chrome no issues.
 - Microsoft Edge no issues.
 - Mozzila firefox no issues.
+
+## Validating
+HTML validator: Passed without errors
+Css validator : Passed without errors
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+            
+Valid CSS!
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+        
+
 
 
 ## Acknowledgments/Credits

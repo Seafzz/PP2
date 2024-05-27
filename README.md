@@ -30,7 +30,6 @@ word per minute (WPM) and characters per minute (CPM)
 ## Known Bugs
 After the times run out and you press Go Again, it does not call for a new quote. (Refreshing the page does.)
 
-## Known issues
 Counters are currently not counting as intended and shows wrong values to what is expected.
 
 ## Manual testing
@@ -61,9 +60,6 @@ Valid CSS!
     
 - JavaScript validator
 - Passed through with one error: One unused variable (restart) called in the HTML for the button.
-
-
-
 
 ## Acknowledgments/Credits
 - Sean, classmate for suggestions/brainstorming

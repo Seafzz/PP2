@@ -62,12 +62,11 @@ Valid CSS!
 
 
 
-## Acknowledgments/Credits
-
-- Sean, classmate for suggestions/brainstorming! <br>
-- WebDevSimplified (youtube guide linked below (API)) <br>
-- CodingNepal (youtube guide linked below(Counters)) <br>
-- WaisAyam (yotubeguide linked below (color/layout)) <br>
+Acknowledgments/Credits
+Sean, classmate for suggestions/brainstorming
+WebDevSimplified (YouTube guide for API): https://www.youtube.com/watch?v=R-7eQIHRszQ&t=72
+CodingNepal (YouTube guide for counters): https://www.youtube.com/watch?v=Hg80AjDNnJk&t=1423s
+WaisAyam (YouTube guide for color/layout): https://www.youtube.com/watch?v=Y70pPpc1CUE
 
 ## Deployment
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
@@ -76,8 +75,3 @@ Valid CSS!
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
 The live link can be found here - https://github.com/Seafzz/PP2
-
-## Guides 
-- https://www.youtube.com/watch?v=R-7eQIHRszQ&t=72 (API)
-- https://www.youtube.com/watch?v=Hg80AjDNnJk&t=1423s (counters)
-- https://www.youtube.com/watch?v=Y70pPpc1CUE (layout)

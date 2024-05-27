@@ -30,6 +30,11 @@ After the times run out and you press Go Again, it does not call for a new quote
 ## Known issues
 Counters are currently not counting as intended and shows wrong values to what is expected.
 
+## Manually testing
+- Google Chrome no issues.
+- Microsoft Edge no issues.
+- Mozzila firefox no issues.
+
 
 ## Acknowledgments/Credits
 

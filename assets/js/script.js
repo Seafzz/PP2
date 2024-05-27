@@ -62,6 +62,12 @@ function startTimer() {
             clearInterval(timerInterval);
             countDownElement.textContent = "Time is up!";
             gameRunning = false;
+        }   else if (remaining <= 15000){
+                countDownElement.style.color = 'red';
+        }   else if (remaining <= 30000) { 
+                countDownElement.style.color = 'yellow';
+        } else {
+                countDownElement.style.color = 'white';
         }
     }, 1000);
 }

@@ -5,10 +5,10 @@ const quoteInputElement = document.getElementById("typing-input");
 const errorsElement = document.querySelector(".errors span");
 const wpmElement = document.querySelector(".cpm span");
 const cpmElement = document.querySelector(".wpm span");
-let gameRunning = true;
-let errorCount = 0;
-let typedCharactersCount = 0;
-let startTime = null;
+const gameRunning = true;
+const errorCount = 0;
+const typedCharactersCount = 0;
+const startTime = null;
 let timerInterval;
 
 quoteInputElement.addEventListener("input", () => {

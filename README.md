@@ -62,11 +62,11 @@ Valid CSS!
 
 
 
-Acknowledgments/Credits
-Sean, classmate for suggestions/brainstorming
-WebDevSimplified (YouTube guide for API): https://www.youtube.com/watch?v=R-7eQIHRszQ&t=72
-CodingNepal (YouTube guide for counters): https://www.youtube.com/watch?v=Hg80AjDNnJk&t=1423s
-WaisAyam (YouTube guide for color/layout): https://www.youtube.com/watch?v=Y70pPpc1CUE
+## Acknowledgments/Credits
+- Sean, classmate for suggestions/brainstorming
+- WebDevSimplified (YouTube guide for API): https://www.youtube.com/watch?v=R-7eQIHRszQ&t=72
+- CodingNepal (YouTube guide for counters): https://www.youtube.com/watch?v=Hg80AjDNnJk&t=1423s
+- WaisAyam (YouTube guide for color/layout): https://www.youtube.com/watch?v=Y70pPpc1CUE
 
 ## Deployment
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 

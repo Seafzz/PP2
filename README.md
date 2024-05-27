@@ -24,6 +24,13 @@ word per minute (WPM) and characthers per minute (CPM)
 git clone https://github.com/Seafzz/PP2
 2. Start the index.html in with you webbrowser and to start the game.
 
+## Know Bugs
+After the times run out and you press Go Again, it does not call for a new quote. (Refreshing the page does.)
+
+## Known issues
+Counters are currently not counting as intended and shows wrong values to what is expected.
+
+
 ## Acknowledgments/Credits
 
 Sean, classmate for suggestions/brainstorming!

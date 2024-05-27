@@ -1,4 +1,4 @@
-/* universal applier*/
+/* universal applier WaisAyam */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
 span{
     font-size:25px;
 }
-/** The full gamearea*/
+/** The full gamearea, WaisAyam */
 .gamearea {
     background: linear-gradient(110deg, rgb(194, 99, 94), rgb(0, 0, 0));
     color: #fff;
@@ -65,7 +65,7 @@ span{
     text-align: center;
     line-height: 35px;
 }
-/* list items*/
+/* list items, WaisAyam*/ 
 .gamearea .scores {
     background: linear-gradient(120deg, rgb(194, 99, 94), rgb(0, 0, 0));
     border-radius: 15px;
@@ -77,6 +77,7 @@ span{
     border-bottom: 1px solid #ccc;
     list-style: none;
 }
+/* bottom border for the countes * WaisAyam */ 
 .gamearea .scores li:last-child {
     border-bottom: none;
 }
@@ -98,7 +99,7 @@ span{
 .scores li.errors p,
 .scores li.wpm p,
 .scores li.cpm p {
-    font-weight: 600;
+    font-weight: 400;
 }
 /* List items fontsize*/
 .scores li.time,

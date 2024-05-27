@@ -34,6 +34,7 @@ Counters are currently not counting as intended and shows wrong values to what i
 - Google Chrome no issues.
 - Microsoft Edge no issues.
 - Mozzila firefox no issues.
+- safari no issues.
 
 ## Validating
 - HTML validator: Passed without errors

@@ -1,16 +1,17 @@
-/* WebDevSimplified  API quote and link */
 const RANDOM_QUOTE_API_URL = "https://api.quotable.io/random";
 const quoteDisplayElement = document.getElementById("typing");
 const quoteInputElement = document.getElementById("typing-input");
 const errorsElement = document.querySelector(".errors span");
 const wpmElement = document.querySelector(".cpm span");
 const cpmElement = document.querySelector(".wpm span");
+
 let gameRunning = true;
 let errorCount = 0;
 let typedCharactersCount = 0;
 let startTime = null;
 let timerInterval;
 
+// Add event listener for input
 quoteInputElement.addEventListener("input", () => {
     if (!startTime) {
         startTime = new Date();
@@ -24,14 +25,14 @@ quoteInputElement.addEventListener("input", () => {
     }
 });
 
-/**Fetch a random quote from the url from WebDevSimplified */
+// Fetch a random quote WebDevSimplified 
 function getRandomQuote() {
     return fetch(RANDOM_QUOTE_API_URL)
         .then((response) => response.json())
         .then((data) => data.content);
 }
 
-/**Render a new quote and make every word into a span  from WebDevSimplified */
+// Render a new quote WebDevSimplified 
 function renderNewQuote() {
     if (!gameRunning) return;
     getRandomQuote().then((quote) => {
@@ -45,7 +46,8 @@ function renderNewQuote() {
         quoteInputElement.focus();
     });
 }
-/** Timer function */
+
+// Start the timer
 function startTimer() {
     const countDownDuration = 60000;
     const countDownElement = document.getElementById("timer");
@@ -54,7 +56,7 @@ function startTimer() {
     clearInterval(timerInterval);
 
     const endTime = Date.now() + countDownDuration;
-    timerInterval = setInterval(function () {
+    timerInterval = setInterval(() => {
         const remaining = endTime - Date.now();
         const secondsLeft = Math.round(remaining / 1000);
         countDownElement.textContent = secondsLeft;
@@ -62,36 +64,37 @@ function startTimer() {
             clearInterval(timerInterval);
             countDownElement.textContent = "Time is up!";
             gameRunning = false;
-        }   else if (remaining <= 15000){
-                countDownElement.style.color = 'red';
-        }   else if (remaining <= 30000) { 
-                countDownElement.style.color = 'yellow';
+        } else if (remaining <= 15000) {
+            countDownElement.style.color = 'red';
+        } else if (remaining <= 30000) {
+            countDownElement.style.color = 'yellow';
         } else {
-                countDownElement.style.color = 'white';
+            countDownElement.style.color = 'white';
         }
     }, 1000);
 }
-/** Start the game and timer when the site is loaded */
-document.addEventListener("DOMContentLoaded", (event) => {
+
+// Start the game and timer when the site is loaded
+document.addEventListener("DOMContentLoaded", () => {
     renderNewQuote();
     startTimer();
 });
 
-/** The functions checking for correct spelling */
-
+// Check for correct spelling
 function checks() {
     const characters = quoteDisplayElement.querySelectorAll("span");
     const typedCharacters = quoteInputElement.value.split("");
     typedCharactersCount = typedCharacters.length;
     errorCount = 0;
+    let correct = false;
     characters.forEach((charSpan, index) => {
         const character = typedCharacters[index];
         if (character == null) {
             charSpan.classList.remove("correct", "incorrect");
-            correct = false;
         } else if (character === charSpan.innerText) {
             charSpan.classList.add("correct");
             charSpan.classList.remove("incorrect");
+            correct = true;
         } else {
             charSpan.classList.add("incorrect");
             charSpan.classList.remove("correct");
@@ -99,7 +102,8 @@ function checks() {
         }
     });
 }
-/** resets the counters */
+
+// Reset the counters
 function reset() {
     typedCharactersCount = 0;
     errorCount = 0;
@@ -107,17 +111,19 @@ function reset() {
     wpmElement.textContent = 0;
     cpmElement.textContent = 0;
 }
-/** Update the wpm/cpm and calculate the time lapsed to give an accurate reading of the wpm/cpm */
+
+// Update the WPM and CPM
 function update() {
     const currentTime = new Date();
-    const TimeElapsed = (currentTime - startTime) / 1000 / 60;
-    const wpm = Math.round(typedCharactersCount / 5 / TimeElapsed);
-    const cpm = Math.round(typedCharactersCount / TimeElapsed);
+    const timeElapsed = (currentTime - startTime) / 1000 / 60;
+    const wpm = Math.round(typedCharactersCount / 5 / timeElapsed);
+    const cpm = Math.round(typedCharactersCount / timeElapsed);
     errorsElement.textContent = errorCount;
     wpmElement.textContent = wpm;
     cpmElement.textContent = cpm;
 }
-/** restart the game */
+
+// Restart the game
 function restart() {
     reset();
     startTimer();

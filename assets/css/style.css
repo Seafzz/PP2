@@ -81,7 +81,7 @@ span{
 .gamearea .scores li:last-child {
     border-bottom: none;
 }
-/** button styling*/
+/** button styling WaisAyam*/
 .gamearea button {
     background: linear-gradient(100deg, rgb(194, 99, 94), rgb(0, 0, 0));
     width: 45%;

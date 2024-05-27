@@ -1,4 +1,4 @@
-#Typing Speed Test
+# Typing Speed Test
 
 This project is a typing speed game that fetches a random quote from an API.
 wich allows the user to type them as quickly and accurate as possible with a live feedback showing errors
@@ -37,6 +37,8 @@ Counters are currently not counting as intended and shows wrong values to what i
 - WebDevSimplified (youtube guide linked below (API)) <br>
 - CodingNepal (youtube guide linked below(Counters)) <br>
 - WaisAyam (yotubeguide linked below (color/layout)) <br>
+
+## Deployment
 
 
 ## Guides 

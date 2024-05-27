@@ -15,7 +15,7 @@ word per minute (WPM) and characters per minute (CPM)
 
 ## Features to implement
 - Make a border that fills up during the 60 seconds the game is active.
-- implement different stages of the game, so the user can chose different times, 2,3 or 5 minutes. 
+- implement different stages of the game, so the user can choose different times, 2,3 or 5 minutes. 
 
 ## Technologies Used
 - HTML 
@@ -25,7 +25,7 @@ word per minute (WPM) and characters per minute (CPM)
 
 ## Setup and Usage
 1. Clone the repository: https://github.com/Seafzz/PP2
-2. Start the index.html in with you webbrowser and to start the game.
+2. Open the index.html with you web browser to start the game.
 
 ## Known Bugs
 After the times run out and you press Go Again, it does not call for a new quote. (Refreshing the page does.)
@@ -36,12 +36,12 @@ Counters are currently not counting as intended and shows wrong values to what i
 ## Manual testing
 - Google Chrome no issues.
 - Microsoft Edge no issues.
-- Mozzila firefox no issues.
+- Mozilla firefox no issues.
 - safari no issues.
 
 ## Validating
 - HTML validator: Passed without errors
-- Css validator : Passed without errors
+- CSS validator : Passed without errors
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -59,7 +59,7 @@ Valid CSS!
     </a>
 </p>
     
-- Javascript validator
+- JavaScript validator
 - Passed through with one error: One unused variable (restart) called in the HTML for the button.
 
 

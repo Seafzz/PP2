@@ -41,9 +41,9 @@ body {
     overflow-y: auto;
 }
 /* gamewindow text*/
-.gamewindow .typing p {
+.gamewindow .typing .span {
     text-align: justify;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 1px;
     word-break: break-all;
 }

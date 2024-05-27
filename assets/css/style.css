@@ -13,6 +13,9 @@ body {
     min-height: 100vh;
     background-color: #2c038b;
 }
+span{
+    font-size:25px;
+}
 /** The full gamearea*/
 .gamearea {
     background: linear-gradient(110deg, rgb(194, 99, 94), rgb(0, 0, 0));
@@ -41,9 +44,9 @@ body {
     overflow-y: auto;
 }
 /* gamewindow text*/
-.gamewindow .typing .span {
+.gamewindow .typing p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 1px;
     word-break: break-all;
 }

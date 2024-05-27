@@ -117,6 +117,7 @@ span{
 .typing span.active {
     color: #979494;
 }
+/* WaisAyam*/
 .typing span.active::before {
     position: absolute;
     left: 0;

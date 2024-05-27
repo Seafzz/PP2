@@ -108,7 +108,7 @@ span{
     font-size: 20px;
 }
 .correct {
-    color: green;
+    color: rgb(1, 255, 1);
 }
 .incorrect {
     color: red;

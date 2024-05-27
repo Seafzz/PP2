@@ -33,13 +33,13 @@ Counters are currently not counting as intended and shows wrong values to what i
 
 ## Acknowledgments/Credits
 
-Sean, classmate for suggestions/brainstorming! <br>
-WebDevSimplified (youtube guide linked below (API)) <br>
-CodingNepal (youtube guide linked below(Counters)) <br>
-WaisAyam (yotubeguide linked below (color/layout)) <br>
+- Sean, classmate for suggestions/brainstorming! <br>
+- WebDevSimplified (youtube guide linked below (API)) <br>
+- CodingNepal (youtube guide linked below(Counters)) <br>
+- WaisAyam (yotubeguide linked below (color/layout)) <br>
 
 
-- Guides 
-    https://www.youtube.com/watch?v=R-7eQIHRszQ&t=72 (API)
-    https://www.youtube.com/watch?v=Hg80AjDNnJk&t=1423s (counters)
-    https://www.youtube.com/watch?v=Y70pPpc1CUE (layout)
+## Guides 
+- https://www.youtube.com/watch?v=R-7eQIHRszQ&t=72 (API)
+- https://www.youtube.com/watch?v=Hg80AjDNnJk&t=1423s (counters)
+- https://www.youtube.com/watch?v=Y70pPpc1CUE (layout)

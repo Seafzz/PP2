@@ -1,7 +1,7 @@
 # Typing Speed Test
 
 This project is a typing speed game that fetches a random quote from an API.
-wich allows the user to type them as quickly and accurate as possible with a live feedback showing errors
+Wich allows the user to type them as quickly and accurate as possible with a live feedback showing errors
 word per minute (WPM) and characters per minute (CPM)
 ![The game](assets/images/screenshots/game.png)
 
